@@ -1,0 +1,67 @@
+/*feuille de style*/
+
+/*body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-color: black;*/
+    box-sizing: border-box;
+    background: url(images/hologramme.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+/*wrapper*/
+.wrapper{
+    width: 80%;
+    margin:3% auto;
+    padding-top: 2%;
+    background-color:white;
+    opacity: 0.6;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+html{
+    font-size: 1em;
+}
+.computer{  
+    font-size: 3.5rem;
+}
+.smartphone{
+    font-size: 3.5rem;
+}
+.tablet{
+    font-size: 3.5rem;
+}
+/*debut header*/
+.nav a{
+    font-size: 1.2rem;
+    color : purple;
+}
+.nav a:hover{
+    color : orangered;
+}
+.icone
+{
+    height: 25vh;
+    padding-bottom: 5%;
+    /*background-color: aqua;*/
+}
+
+/*fin header/
+
+/*debut main*/
+.main{
+    height: 35vh;
+    /*background-color: aqua;*/
+}
+/*fin main*/
+
+/*debut footer*/
+footer{
+    height:15vh;
+    /*background-color: aqua;*/
+}
+.footer-navigation{
+    margin-top: 3%;
+}
+/*fin footer*/
