@@ -74,8 +74,8 @@ html{
     }
     /*debut footer*/
     .footer{
-        height:10vh;
-        /*background-color: aqua;*/
+        height:15vh;
+        background-color: red;
     }
     .footer-navigation{
         margin-top: 3%;
