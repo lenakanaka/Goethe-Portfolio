@@ -7,12 +7,13 @@ body{
     box-sizing: border-box;
     background: url(images/hologramme.jpg) no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 /*wrapper*/
 .wrapper{
     width: 80%;
     margin:3% auto;
+    min-height: 100vh;
     padding-top: 2%;
     background-color:white;
     opacity: 0.6;
