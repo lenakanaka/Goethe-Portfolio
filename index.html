@@ -22,6 +22,7 @@ objectif : site web cadre emploi-->
     <body>
         <!--debut wrapper-->
         <div class="wrapper">
+            <canvas id="venise" class="boite"></canvas>
             <!--debut header-->
             <header>
                 <div class="container">
@@ -31,16 +32,16 @@ objectif : site web cadre emploi-->
                             <div class="navigation">
                                 <ul class="nav justify-content-end">
                                     <li class="nav-item">
-                                      <a class="nav-link active" href="index.html">Accueil</a>
+                                      <a class="nav-link active animH" href="index.html">Accueil</a>
                                     </li>
                                     <li class="nav-item">
-                                      <a class="nav-link active" href="htmls/pageCV.html">CV</a>
+                                      <a class="nav-link active animH" href="htmls/pageCV.html">CV</a>
                                     </li>
                                     <li class="nav-item">
-                                      <a class="nav-link active" href="htmls/pageMesTravaux.html">Mes Travaux</a>
+                                      <a class="nav-link active animH" href="htmls/pageMesTravaux.html">Mes Travaux</a>
                                     </li>
                                     <li class="nav-item">
-                                      <a class="nav-link active" href="htmls/pageContact.html">Contact</a>
+                                      <a class="nav-link active animH" href="htmls/pageContact.html">Contact</a>
                                     </li>
                                   </ul>
                             </div>
@@ -61,8 +62,8 @@ objectif : site web cadre emploi-->
                             <!--fin div icone-->
                             <!--div titre-->
                             <div class="titre d-flex flex-column justify-content-center align-items-center">
-                                <h1>INTEGRATEUR - DEVELOPPEUR</h1>
-                                <h2>Illustrateur / Déssinateur</h2>
+                                <h1 class="animH">INTÉGRATEUR - DÉVELOPPEUR</h1>
+                                <h2 id="animH1">Illustrateur / Dessinateur</h2>
                             </div>
                             <!--fin div titre-->
                         </div>
@@ -79,8 +80,8 @@ objectif : site web cadre emploi-->
                         <div class="col-sm-7 col-md-10 col-lg-12">
                             <div class="main d-flex flex-column 
                             justify-content-start align-items-start">
-                                <h2>A propos de moi</h2><br/>
-                                <p>
+                                <h2 class="animH">A propos de moi</h2><br/>
+                                <p class="animH">
                                     Développeur de site Web et Dessinateur BD, 
                                     passionné par les comics et le manga qui ont 
                                     bercé mon adolescence. J'ai fait une formation en 
@@ -115,16 +116,16 @@ objectif : site web cadre emploi-->
                                <div class="footer-navigation">
                                     <ul class="nav justify-content-start align-items-end">
                                         <li class="nav-item">
-                                        <a class="nav-link active" href="index.html">Accueil</a>
+                                            <a class="nav-link active animH" href="index.html">Accueil</a>
                                         </li>
                                         <li class="nav-item">
-                                        <a class="nav-link active" href="htmls/pageCV.html">CV</a>
+                                            <a class="nav-link active animH" href="htmls/pageCV.html">CV</a>
                                         </li>
                                         <li class="nav-item">
-                                        <a class="nav-link active" href="htmls/pageMesTravaux.html">Mes travaux</a>
+                                            <a class="nav-link active animH" href="htmls/pageMesTravaux.html">Mes travaux</a>
                                         </li>
                                         <li class="nav-item">
-                                        <a class="nav-link active" href="htmls/pageContact.html">Contact</a>
+                                            <a class="nav-link active animH" href="htmls/pageContact.html">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -136,6 +137,69 @@ objectif : site web cadre emploi-->
             <!--fin footer-->
         </div>
         <!--fin wrapper-->
+        <!--script d'animation-->
+        <script src="granim/granim.min.js"></script>
+        <script>
+            var text_anime = new Granim({
+                element : '#venise',
+                direction :'radial',
+                states:{
+                    "default-state":{
+                        gradients : [
+                            ['#EB3349', '#F45C43'],
+                            ['#FF8008', '#FFC837'],
+                            ['#4CB8C4', '#3CD3AD'],
+                            ['#24C6DC', '#514A9D'],
+                            ['#FF512F', '#DD2476'],
+                            ['#DA22FF', '#9733EE']
+                        ],
+                        transitionSpeed : 2000
+                    }
+                }
+
+            });
+        </script>
+        <script src="granim/jquery-3.7.0.min.js"></script>
+        <script>
+            $(document).ready(function(){   
+            
+                   var couleur = ['black', 'black',
+                            'black', 'black',
+                            'black', 'black',
+                            'white', 'white',
+                            'white', 'white',
+                            'white', 'white'] ;//['darkpurple', 'darkblue','darkgreen' ,'darkgrey', 'black'];
+                   var couleurIndex = 1;
+                   var couleurIndex1 =1;
+                   setInterval(function(){
+                    $('.animH').css('color', couleur[couleurIndex]);
+                    if(couleurIndex < couleur.length)
+                    {
+                        couleurIndex +=1;
+                    }
+                    else
+                    {
+                        couleurIndex = 1;
+                    }
+                   }, 3000);
+                setInterval(function(){
+                $('#animH1').css('color', couleur[couleurIndex1]);
+                if(couleurIndex1 < couleur.length)
+                {
+                    couleurIndex1 +=1;
+                }
+                else
+                {
+                    couleurIndex1 = 1;
+                }
+                }, 3000);
+         
+                
+            });
+        </script>
+        
+        </script>
+        <!--fin script d'animation-->
         <!--script de liaisons bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
