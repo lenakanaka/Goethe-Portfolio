@@ -7,13 +7,12 @@ body{
     box-sizing: border-box;
     background: url(images/hologramme.jpg) no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    
 }
 /*wrapper*/
 .wrapper{
     width: 80%;
     margin:3% auto;
-    min-height: 100vh;
     padding-top: 2%;
     background-color:white;
     opacity: 0.6;
@@ -58,7 +57,7 @@ html{
 /*fin main*/
 
 /*debut footer*/
-footer{
+.footer{
     height:15vh;
     /*background-color: aqua;*/
 }
@@ -66,3 +65,20 @@ footer{
     margin-top: 3%;
 }
 /*fin footer*/
+
+/*requete media */
+@media (max-width : 500px){
+    .wrapper{
+        width: 100%;
+    }
+    /*debut footer*/
+    .footer{
+        height:25vh;
+        background-color: aqua;
+    }
+    .footer-navigation{
+        margin-top: 3%;
+    }
+    /*fin footer*/
+}
+
