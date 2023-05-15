@@ -53,6 +53,7 @@ html{
 .main{
     height: 35vh;
     /*background-color: aqua;*/
+    margin-bottom: 3%;
 }
 /*fin main*/
 
@@ -69,12 +70,12 @@ html{
 /*requete media */
 @media (max-width : 500px){
     .wrapper{
-        width: 100%;
+        width: 90%;
     }
     /*debut footer*/
     .footer{
-        height:25vh;
-        background-color: aqua;
+        height:10vh;
+        /*background-color: aqua;*/
     }
     .footer-navigation{
         margin-top: 3%;
