@@ -16,7 +16,7 @@ body{
     margin:2% auto;
     padding-top: 2%;
     background-color:white;
-    opacity: 0.6;
+    opacity: 0.8;
     border: 1px solid none;
     border-radius: 10px;
     position: relative;
@@ -75,6 +75,20 @@ html{
     /*height: 35vh;*/
     /*background-color: aqua;*/
     margin: 2%;
+}
+
+.cv-images{
+    width: 600px;
+    height: 600px;
+    opacity: 1;
+    border:1px solid none ;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.noir{
+    color:  rgb(37, 2, 37);
+    font-weight: bold;
 }
 /*fin main*/
 
