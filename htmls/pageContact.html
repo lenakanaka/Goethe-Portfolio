@@ -56,6 +56,12 @@ objectif : site web cadre emploi-->
                                     tablet
                                 </span>
                             </div>
+                             <!--div titre-->
+                             <div class="titre d-flex flex-column justify-content-center align-items-center">
+                                <h1 class="animH">INTÉGRATEUR - DÉVELOPPEUR</h1>
+                                <h2 id="animH1">Illustrateur / Dessinateur</h2>
+                            </div>
+                            <!--fin div titre-->
                         </div>
                     </div>
                 </div>
@@ -70,12 +76,167 @@ objectif : site web cadre emploi-->
                         <div class="col-sm-6 col-md-10 col-lg-12">
                             <div class="main d-flex flex-column 
                             justify-content-start align-items-start">
-                                <h1>Contact</h1><br/>
-                                <p>
-                                   <img src="../images/en-construction.jpg" 
-                                   alt="page en-construction" 
-                                   title="page en-construction" width="200" height="200"/>
-                                </p>
+                            <h1>Contact</h1><br/>
+
+                            <!--debut formulaire-->
+                            <form action="mailto:goethelimard@gmail.com" class="needs-validation" novalidate  
+                                method="post" enctype="text/plain">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sex" id="masculin" value="masculin" checked>
+                                    <label class="form-check-label" for="masculin">
+                                      Monsieur
+                                    </label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sex" id="feminin" value="feminin">
+                                    <label class="form-check-label" for="feminin">
+                                      Madame
+                                    </label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sex" id="indecis" value="indecis" disabled>
+                                    <label class="form-check-label" for="indecis">
+                                      Indecis
+                                    </label>
+                                </div><br/><br/>
+                                <div class="form-row">
+                                    <!--Prenom-->
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom01">Prénom</label>
+                                        <input type="text" class="form-control" 
+                                        id="validationCustom01" value="Mark" name="Prenom" required>
+                                        <div class="valid-feedback">
+                                        C'est bien.
+                                        </div>
+                                    </div>
+                                    <!--fin Prenom-->
+                                    <!--Nom-->
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom02">Nom</label>
+                                        <input type="text" class="form-control" 
+                                        id="validationCustom02" value="Otto" name="Nom" required>
+                                        <div class="valid-feedback">
+                                        C'est bien
+                                        </div>
+                                    </div>
+                                    <!--fin nom-->
+                                </div>
+                                <div class="form-row">
+                                    <!--Entreprise-->
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom03">Entreprise</label>
+                                        <input type="text" class="form-control" 
+                                        id="validationCustom03" required name="Entreprise">
+                                        <div class="invalid-feedback">
+                                          S'il vous plaît entrez une Entreprise valide.
+                                        </div>
+                                    </div>
+                                    <!--fin Entreprise-->
+                                    <!--Poste-->
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom03">Poste à occuper</label>
+                                        <input type="text" class="form-control" 
+                                        id="validationCustom03" name="Poste" required>
+                                        <div class="invalid-feedback">
+                                          S'il vous plaît entrez une ville valide.
+                                        </div>
+                                    </div>
+                                    <!--fin poste-->
+                                    <!--Adresse-->
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom03">Adresse</label>
+                                        <input type="text" class="form-control" 
+                                        id="validationCustom03" name="Adresse" required>
+                                        <div class="invalid-feedback">
+                                          S'il vous plaît entrez une adresse valide
+                                        </div>
+                                    </div>
+                                    <!--fin Adresse-->
+                                    <!--Ville-->
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom03">Ville</label>
+                                        <input type="text" class="form-control" 
+                                        id="validationCustom03"  name="Ville" required>
+                                        <div class="invalid-feedback">
+                                        S'il vous plaît entrez une ville valide.
+                                        </div>
+                                    </div>
+                                    <!--fin ville-->
+                                    <!--cp-->
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationCustom05">Code Postal</label>
+                                        <input type="text" class="form-control" 
+                                        id="validationCustom05" name="CP" required>
+                                        <div class="invalid-feedback">
+                                            S'il vous plaît entrez un code postal valide.
+                                        </div>
+                                    </div>
+                                    <!--fin cp-->
+                                    <!--Pays-->
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationCustom04">Pays</label>
+                                        <select class="custom-select" 
+                                        id="validationCustom04" name="Pays" required>
+                                        <option selected disabled value="france" name="franece">France</option>
+                                        <option value="allemagne" name="allemagne">Allemagne</option>
+                                        <option value="suisse" name="suisse">Suisse</option>
+                                        <option value="angleterre" name="angleterre">Angleterre</option>
+                                        
+                                        <option value="suede" name="suede">Suède</option>
+                                        <option value="pays-bas" name="pays-bas">Pays-Bas</option>
+                                        <option value="hollande" name="hollande">La Hollande</option>
+                                        <option value="norvege" name="norvege">La Norvège</option>
+                                        <option value="etats-unis" name="etats-unis">Etats-Unis</option>
+                                        <option value="canada" name="canada">Canada</option>
+                                        <option value="haiti" name="haiti">Haïti</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                        Please select a valid state.
+                                        </div>
+                                    </div>
+                                    <!--fin pays-->
+                                </div>
+                                <!--Conditions-->
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                        J'accepte les termes et conditions
+                                        </label>
+                                        <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--fin conditions-->
+                                <!--bouton-->
+                                <button class="btn btn-primary" type="submit">Envoyer</button>
+                                <!--fin bouton-->
+                              </form>
+                              <!--fin formulaire-->
+
+                              <!--debut script-->
+                              <script>
+                              // traitement du formulaire
+                              (function() {
+                                'use strict';
+                                window.addEventListener('load', function() {
+                                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                  var forms = document.getElementsByClassName('needs-validation');
+                                  // Loop over them and prevent submission
+                                  var validation = Array.prototype.filter.call(forms, function(form) {
+                                    form.addEventListener('submit', function(event) {
+                                      if (form.checkValidity() === false) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                      }
+                                      form.classList.add('was-validated');
+                                    }, false);
+                                  });
+                                }, false);
+                              })();
+                              </script>
+                              <!--fin script-->
                             </div>
                         </div>
                     </div>
