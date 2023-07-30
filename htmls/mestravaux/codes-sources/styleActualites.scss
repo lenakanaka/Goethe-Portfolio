@@ -1,0 +1,91 @@
+/*feuille de style actualites*/
+
+/*declaration de variables*/
+$couleurBody : black;
+$couleurWrapper:antiquewhite ;
+$couleurGrandTitre : purple;
+$couleurTitre: rgb(208, 6, 208);
+$couleurAsideA: orange;
+$couleurAsideB:  rgb(250, 201, 110) ;
+$couleurAsideC: rgb(249, 209, 128);
+
+//Traitement
+/*body*/
+body{
+    background-color: $couleurBody;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*wrapper*/
+#wrapper{
+    background-color: $couleurWrapper;
+    width: 80%;
+   /* height: 70vh;*/
+    margin:  auto;
+}
+/*Debut header*/
+/* grand Titre*/
+.header-h1--titre{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+    text-align: center;
+    background-color:$couleurGrandTitre ;
+    border: 4px double $couleurBody;
+    
+}
+/*fin header
+
+/*debut main*/
+main{
+    
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/*Tire main*/
+.main-h2--titre{
+    text-align: center;
+    background-color:$couleurGrandTitre ;
+    border: 4px double $couleurBody;
+}
+
+#main-liste{
+    margin-top: 7%;
+}
+
+aside{
+    margin-top: 5%;
+    
+}
+.aside-A{
+    background-color: $couleurAsideA;
+    margin-bottom: 5%;
+    
+}
+.aside-B{
+    background-color: $couleurAsideB;
+    margin-bottom: 5%;
+}
+.aside-C{
+    background-color: $couleurAsideC;
+    margin-bottom: 5%;
+}
+.texte{
+    text-align: left;
+    width: 90%;
+}
+/*fin main*/
+
+/*debut footer*/
+.footer{
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+/*Requete media*/
+@media screen and (min-width: 1020px) {
+    aside{
+        margin-top: 11%;
+    }
+    
+}
