@@ -134,6 +134,61 @@ objectif : travaux de web en html, css, boostrap, JQuery-->
 
     </div>
     <!--fin bloc principal-->
+
+    <!--debut script jquery-->
+    <script src="script/jquery-3.6.1.min.js"></script>
+    <script>
+        //debut script
+        $(document).ready(function(){
+
+            //traitement des elements li
+            $('#main-liste li')
+            .on('click', function(){
+                $(this).fadeOut('slow');
+                $(this).fadeIn('slow');
+            });
+            
+
+            //traitement aside-A
+            
+            $('.aside-A')
+            .hover(
+                function(){
+                    $(this).css('background-color', 'lightblue');
+                },
+                function(){
+                    $(this).css('background-color','orange');
+                }
+            );
+            //traitement aside-B
+            $('.aside-B')
+            .hover(
+                function(){
+                    $(this).css('background-color', 'lightgreen');
+                },
+                function(){
+                    $(this).css('background-color', 'rgb(250, 201, 110)');
+                }
+            );
+            //Traitement aside-C
+            $('.aside-C')
+            .hover(
+                function(){
+                    $(this).css('background-color', 'red');
+                },
+                function(){
+                    $(this).css('background-color', 'rgb(249, 209, 128)');
+                }
+            )
+
+
+            
+        });
+
+        //fin script
+    </script>
+
+    <!--fin script jquery-->
     
 </body>
 </html>
